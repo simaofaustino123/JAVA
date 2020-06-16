@@ -1,3 +1,4 @@
+package br.com.geekuniversity.secao9;
 /* 
  * Construtor sempre tem o nome da sua classe.
  * 
@@ -17,7 +18,6 @@ public class Programa01 {
 		pessoa1.imprime_informacoes();
 		pessoa2.imprime_informacoes();
 
-		
 	}
 
 }
