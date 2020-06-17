@@ -22,6 +22,16 @@ public class Professor extends Pessoa {
 		return super.toString() + "Matricula: " + this.matricula + "\n";
 	}
 		
+	public String getNome() {
+		return "Professor: \n" + super.getNome();
+	}
+
+	@Override
+	public void outra_msg(String texto) {
+		// TODO Auto-generated method stub
+		System.out.println(texto);
+		
+	}
 	
 
 }

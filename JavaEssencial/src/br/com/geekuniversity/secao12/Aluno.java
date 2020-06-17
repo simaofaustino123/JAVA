@@ -39,7 +39,13 @@ public class Aluno extends Pessoa {
 	}
 	
 	public String getNome() {
-		return super.getNome()
+		return "Aluno: \n" + super.getNome() + "\n";
+	}
+	
+	@Override
+	public void outra_msg(String texto) {
+		System.out.println(texto);
+		
 	}
 	
 	
