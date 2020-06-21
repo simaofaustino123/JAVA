@@ -9,9 +9,11 @@ Getters e Setters
 */
 
 public class Conta {
+	@SuppressWarnings("unused")
 	private int numero;
 	private float saldo;
 	private float limite;
+	@SuppressWarnings("unused")
 	private Cliente cliente;
 
 	public Conta(int numero, float saldo, float limite, Cliente cliente) {
@@ -24,22 +26,32 @@ public class Conta {
 	public void sacar(float valor) {
 		if (valor <= this.saldo) {
 			this.saldo = this.saldo - valor;
+			System.out.println("Saque realizado com sucesso");
 		} else if (valor <= (this.saldo + this.limite)) {
 			System.out.println("Entrou no limite");
 			float val_ret = (valor - this.saldo);
 			System.out.println("Val ret limite: " + val_ret);
 			this.limite = this.limite - val_ret;
 			this.saldo = this.saldo - (valor - val_ret);
+			System.out.println("Saque realizado com sucesso");
 		} else {
 			System.out.println("Saldo insuficiente.");
 		}
 	}
-
+	/**
+	 * Método para realizar depósito
+	 * 
+	 * @param valor a ser depositado
+	 */
 	public void depositar(float valor) {
 		this.saldo = this.saldo + valor;
 	}
 
-	// Método getter do atributo Saldo;
+	
+	/**
+	 * Método getter do atributo Saldo;
+	 * @return a soma do saldo mais limite
+	 */
 	public float getSaldo() {
 		return this.saldo + this.limite;
 	}

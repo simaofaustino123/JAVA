@@ -26,7 +26,7 @@ public class Programa33 {
 		
 		Ventilador vent = new Ventilador();
 		
-		System.out.println("A marca do ventiladior é " + vent.MARCA);
+		System.out.println("A marca do ventiladior é " + IEletronico.MARCA);
 		
 		vent.desligar();
 		vent.ligar();
