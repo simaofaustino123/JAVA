@@ -8,7 +8,7 @@ Protected
 	informado qual será usado, ele é padrão.
 */
 
-public class Cliente {
+public class Cliente extends Conta{
 	
 	private String nome, endereco;
 	

@@ -15,6 +15,8 @@ public class Conta {
 	private float limite;
 	@SuppressWarnings("unused")
 	private Cliente cliente;
+	
+	public Conta() {};
 
 	public Conta(int numero, float saldo, float limite, Cliente cliente) {
 		this.numero = numero;
@@ -54,6 +56,21 @@ public class Conta {
 	 */
 	public float getSaldo() {
 		return this.saldo + this.limite;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "O saldo da conta é " + this.getSaldo();
+	}
+	
+	public boolean equals(Object obj) {
+		if(!(obj instanceof Conta)) {
+			return false;
+		}else {
+			Conta verificar = (Conta) obj;
+			return verificar.getSaldo() == this.getSaldo();
+		}
 	}
 
 }
