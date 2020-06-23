@@ -17,7 +17,7 @@ import br.com.geekuniversity.secao11.Conta;
 public class Principal {
 
 	// static para acessar dentro de qlqr método
-	static Cliente cliente = new Cliente("Angelina Jolie", "Rua da Paz, 45");
+	static Cliente cliente = new Cliente(15, "Angelina Jolie", "Rua da Paz, 45");
 	static Conta conta = new Conta(1, 200, 300, cliente);
 	static Scanner teclado = new Scanner(System.in);
 

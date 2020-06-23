@@ -73,4 +73,9 @@ public class Conta {
 		}
 	}
 
+	public int compareTo(Cliente outro) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }
