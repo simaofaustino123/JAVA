@@ -45,10 +45,17 @@ public class Conta {
 	 * 
 	 * @param valor a ser depositado
 	 */
+	//FORMA 1
 	public void depositar(float valor) {
-		this.saldo = this.saldo + valor;
+		synchronized (this) {
+			this.saldo = this.saldo + valor;
+		}
 	}
-
+	
+//	//FORMA 2
+//	public synchronized void depositar(float valor) {
+//		this.saldo = this.saldo + valor;
+//	}
 	
 	/**
 	 * Método getter do atributo Saldo;

@@ -1,4 +1,4 @@
-package br.com.geekuniversity.secao9;
+package br.com.geekuniversity.secao09;
 
 public class Produto {
 	String nome;
