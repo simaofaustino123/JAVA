@@ -14,7 +14,6 @@ package br.com.geekuniversity.secao19;
  
  */
 
-import java.awt.List;
 import java.util.ArrayList;
 import java.util.Collections;
 
