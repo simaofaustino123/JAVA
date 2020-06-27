@@ -22,5 +22,15 @@ public class Programa62 {
 		fila.remove();
 		System.out.println(fila);
 		
+		System.out.println(fila.vazia());
+		
+		fila.remove();
+		fila.remove();
+		
+		System.out.println(fila.vazia());
+		System.out.println(fila);
+		fila.remove();
+		System.out.println(fila.vazia());
+		
 	}
 }

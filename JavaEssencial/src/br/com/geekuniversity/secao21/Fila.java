@@ -12,7 +12,12 @@ public class Fila {
 	}
 	
 	public String remove() {
-		return nomes.remove(0);
+		try {
+			return nomes.remove(0);
+		}catch(IndexOutOfBoundsException e) {
+			System.out.println("Lista já está vazia");
+			return "";
+		}
 	}
 	
 	public boolean vazia() {
